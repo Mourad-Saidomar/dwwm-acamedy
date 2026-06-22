@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --fond: #0e0a06;
+  --carte: #1e1409;
+  --accent: #f59e0b;
+  --accent2: #ea580c;
+  --texte: #fff7ed;
+  --texte-doux: #d6b99a;
+  --bordure: rgba(245, 158, 11, 0.22);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: 'Inter', sans-serif;
+  background-color: #251a0f;
+}
+
+.glass-effect {
+  background: #ea5a0c37;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #ea5a0c1f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+
+.navbar-brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.text-secondary {
+  color: var(--texte-doux) !important;
+}
+
+.text-success,
+.text-success-emphasis {
+  color: var(--accent) !important;
+}
+
+.navbar-brand {
+  color: var(--accent) !important;
+}
+
+.navbar .nav-link {
+  color: var(--texte-doux);
+}
+
+.navbar .nav-link:hover,
+.navbar .router-link-active {
+  color: var(--texte);
+  background: rgba(245, 158, 11, 0.14);
+}
+
+.navbar-toggler {
+  border-color: var(--bordure);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(245, 158, 11, 0.22);
+}
+
+.site-footer {
+  background: rgba(14, 10, 6, 0.7);
+  border-top: 1px solid var(--bordure);
+}
+
+.footer-link {
+  color: var(--texte-doux);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.footer-link:hover,
+.footer-link.router-link-active {
+  color: var(--texte);
+  background: rgba(245, 158, 11, 0.14);
+}
+
+.card,
+.list-group-item {
+  background: var(--carte);
+  color: var(--texte);
+  border-color: var(--bordure);
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.card-img-top,
+.formation-image {
+  height: 170px;
+  object-fit: contain;
+  background: #160f08;
+  border-bottom: 1px solid var(--bordure);
+}
+
+.detail-image {
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.btn-success {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1e1409;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background: var(--accent2);
+  border-color: var(--accent2);
+  color: #fff7ed;
+}
+
+.btn-outline-success {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1e1409;
+}
+
+.btn-favori {
+  color: var(--texte-doux);
+  background: transparent;
+  border: 1px solid var(--bordure);
+}
+
+.btn-favori:hover,
+.btn-favori:focus {
+  color: #fecaca;
+  background: rgba(248, 113, 113, 0.12);
+  border-color: rgba(248, 113, 113, 0.35);
+}
+
+.btn-favori-actif {
+  color: #fecaca;
+  background: rgba(248, 113, 113, 0.14);
+  border-color: rgba(248, 113, 113, 0.45);
+}
+
+.btn-favori-actif:hover,
+.btn-favori-actif:focus {
+  color: #fff1f2;
+  background: rgba(239, 68, 68, 0.24);
+  border-color: rgba(248, 113, 113, 0.65);
+}
+
+.badge.text-bg-success {
+  background: var(--accent) !important;
+  color: #1e1409 !important;
+}
+
+.badge.text-bg-dark,
+.badge.text-bg-secondary {
+  background: rgba(255, 247, 237, 0.08) !important;
+  color: var(--texte-doux) !important;
+  border: 1px solid var(--bordure);
+}
+
+.form-label {
+  color: var(--texte-doux);
+  font-weight: 600;
+}
+
+.form-control {
+  background: #160f08;
+  color: var(--texte);
+  border-color: var(--bordure);
+}
+
+.form-control:focus {
+  background: #160f08;
+  color: var(--texte);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.22);
+}
+
+.form-control::placeholder {
+  color: #9a7554;
+}
+
+.hero-image {
+  max-width: 320px;
+}
+
+.tech-marquee {
+  overflow: hidden;
+}
+
+.tech-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: tech-scroll 22s linear infinite;
+}
+
+.tech-track-reverse {
+  animation-name: tech-scroll-reverse;
+}
+
+.tech-logo {
+  width: 140px;
+  flex: 0 0 auto;
+}
+
+.tech-logo-image {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+@keyframes tech-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes tech-scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+}
